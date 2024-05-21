@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{% static 'baka.jpg'%}" />
+    <title>You are a baka</title>
+    <style>
+        @font-face {
+            font-family: "ThFont";
+            src: url("{% static 'th.ttf'%}") format('truetype');
+        }
+        body{
+            background-color: #caabcf;
+        }
+        div{
+            text-align: center;
+        }
+        p{
+            font-family: ThFont;
+        }
+    </style>
+</head>
+<body>
+    <div><img src="{% static 'dance.gif'%}" width="50%" height="50%"><br><p>看來有人輸入錯誤了</p></div>
+</body>
+</html>

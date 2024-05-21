@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Group Project</title>
+<link rel="stylesheet" type="text/css" media="screen and (min-width: 481px)" href="{% static 'copy.css'%}" title="default" id="css_desktop" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="{% static '1+1=5.png'%}" />
+<script>
+    function clicks(){
+        let name=document.getElementById("tag").value;
+        window.location.href+=name;
+    }
+</script>
+</head>
+<body>
+<div id="static-index">
+<p class="index-header">
+<img src="{% static 'reisen_cry.png'%}" alt="Stock 34" style="width: 50%; max-width: 700px;" /></a>
+</p>
+<p>Stock#34 : If it exists there is stock available. If not, still working on it.</p>
+<div class="space" id="links">
+<a href="">Reisen</a>
+<a href="">Udongein</a>
+<a href="">Inaba</a>
+<a href="">Is Crying</a>
+</div>
+<div class="space">
+<input id="tag" size="30" type="text" />
+<Button onclick="clicks()">Search</Button>
+</div>
+<div style="font-size: 80%; margin-bottom: 2em;">
+<p>
+Serving ⑨ stocks - Running Stock
+</p>
+<p>
+<img src="{% static '0.gif'%}" style="border: 0"/><img src="{% static '1.gif'%}" style="border: 0"/><img src="{% static '2.gif'%}" style="border: 0"/><img src="{% static '3.gif'%}" style="border: 0"/><img src="{% static '4.gif'%}" style="border: 0"/><img src="{% static '5.gif'%}" style="border: 0"/><img src="{% static '6.gif'%}" style="border: 0"/></p>
+<small>
+<a href="https://discordapp.com/users/961971641498341386">Discord of the noob developer</a>
+<div>At search.tk its easy to find any stock with our slow search engine. Happy browsing!</div>
+</small>
+</div>
+</div>
+</body>
+</html>
